@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Moon Wif Hat Token</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
+    body {
+      margin: 0;
+      background: #0d0d22;
+      color: #eee;
+      font-family: 'Orbitron', sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      padding: 2rem;
+      text-align: center;
+    }
+    .logo {
+      width: 150px;
+      margin-bottom: 1rem;
+    }
+    h1 {
+      font-size: 3rem;
+      margin: 0.2rem 0;
+      color: #8b95ff;
+      text-transform: uppercase;
+      letter-spacing: 0.15em;
+    }
+    p.tagline {
+      font-size: 1.2rem;
+      margin: 0.5rem 0 2rem;
+      color: #b0b3ff;
+    }
+    .description {
+      max-width: 500px;
+      font-size: 1.1rem;
+      margin-bottom: 2rem;
+      line-height: 1.4;
+      color: #c8cae7;
+    }
+    .contract {
+      background: #1b1b3a;
+      padding: 1rem 1.5rem;
+      border-radius: 10px;
+      font-family: monospace;
+      font-size: 1rem;
+      user-select: all;
+      margin-bottom: 2rem;
+      word-break: break-all;
+      max-width: 90vw;
+      cursor: pointer;
+    }
+    .btn-buy {
+      background: #706eff;
+      color: #fff;
+      border: none;
+      border-radius: 50px;
+      padding: 1rem 3rem;
+      font-size: 1.2rem;
+      cursor: pointer;
+      text-transform: uppercase;
+      box-shadow: 0 0 15px #706eff88;
+      transition: background 0.3s ease;
+      margin-bottom: 2rem;
+      text-decoration: none;
+      display: inline-block;
+    }
+    .btn-buy:hover {
+      background: #8b95ff;
+    }
+    .socials {
+      display: flex;
+      justify-content: center;
+      gap: 1.5rem;
+      font-size: 1.5rem;
+      color: #8b95ff;
+    }
+    .socials a {
+      color: inherit;
+      text-decoration: none;
+      transition: color 0.2s ease;
+    }
+    .socials a:hover {
+      color: #b0b3ff;
+    }
+  </style>
+</head>
+<body>
+  <img class="logo" src="https://i.imgur.com/RUFl5pj.png" alt="Moon Wif Hat Logo" />
+  <h1>Moon Wif Hat</h1>
+  <p class="tagline">The next viral crypto moonshot 🚀🌕</p>
+  <p class="description">
+    Moon Wif Hat is your ticket to the moon — a fun, fresh token inspired by the viral Dog Wif Hat style. Join the movement, grab your share, and watch the crypto magic happen!
+  </p>
+  <div class="contract" title="Click to copy" onclick="copyToClipboard()">
+    0x1234567890abcdef1234567890abcdef12345678
+  </div>
+  <a href="https://moonshot.network/launchpad/yourtokenlink" class="btn-buy" target="_blank" rel="noopener noreferrer">
+    Buy Now
+  </a>
+  <div class="socials">
+    <a href="#" title="Twitter" aria-label="Twitter" target="_blank" rel="noopener noreferrer">🐦</a>
+    <a href="#" title="Telegram" aria-label="Telegram" target="_blank" rel="noopener noreferrer">✈️</a>
+    <a href="#" title="Website" aria-label="Website" target="_blank" rel="noopener noreferrer">🌐</a>
+  </div>
+
+  <script>
+    function copyToClipboard() {
+      const contract = document.querySelector('.contract').innerText;
+      navigator.clipboard.writeText(contract).then(() => {
+        alert('Contract address copied!');
+      });
+    }
+  </script>
+</body>
+</html>
